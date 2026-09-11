@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.spine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bubble {
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    flex-shrink: 0;
+}
+
+.bubble:hover {
+    background-color: lightgray !important;
+    font-weight: bold;
+    border-width: 6px;
+}
+.transcript {
+    white-space: pre-line;
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.bubble.big {
+    width: 220px;
+    height: 220px;
+    font-size: 18px;
+}
+
+.connector.vertical {
+    width: 2px;
+    height: 60px;
+    background-color: black;
+    flex-shrink: 0;
+}.bubble.medium {
+    width: 190px;
+    height: 190px;
+    font-size: 16px;
+}
+
+.concept-cluster {
+    position: relative;
+    width: 940px;
+    height: 780px;
+}
+
+.concept-cluster .bubble {
+    position: absolute;
+    z-index: 2;
+}
+
+/* Medium concept bubble */
+
+.concept-topical {
+    left: 40px;
+    top: 290px;
+}
+
+/* Three main-spine bubbles */
+
+.work-one {
+    left: 360px;
+    top: 0;
+}
+
+.work-two {
+    left: 360px;
+    top: 280px;
+}
+
+.work-three {
+    left: 360px;
+    top: 560px;
+}
+
+/* Vertical main-spine connectors */
+
+.cluster-connector {
+    position: absolute;
+    left: 469px;
+    width: 2px;
+    height: 60px;
+    background-color: black;
+    z-index: 1;
+}
+
+.connector-one {
+    top: 220px;
+}
+
+.connector-two {
+    top: 500px;
+}
+
+/* Lines from concept bubble to the three works */
+
+.branch-line {
+    position: absolute;
+    left: 135px;
+    top: 385px;
+    height: 2px;
+    background-color: black;
+    transform-origin: left center;
+    z-index: 1;
+}
+
+.branch-one {
+    width: 433px;
+    transform: rotate(-39deg);
+}
+
+.branch-two {
+    width: 335px;
+    transform: rotate(1deg);
+}
+
+.branch-three {
+    width: 440px;
+    transform: rotate(40deg);
+}.second-concept-cluster {
+    position: relative;
+    width: 940px;
+    height: 340px;
+}
+
+/* D. 959 stays in the center of the main spine */
+
+.d959 {
+    position: absolute;
+    left: 360px;
+    top: 60px;
+    z-index: 2;
+}
+
+/* Medium concept bubble centered between Op. 110 and D. 959 */
+
+.concept-flat {
+    position: absolute;
+    left: 680px;
+    top: -65px;
+    z-index: 2;
+}
+
+/* Connection directly from Op. 110 to the concept */
+
+.flat-line-op110 {
+    position: absolute;
+    left: 470px;
+    top: -110px;
+    width: 335px;
+    height: 2px;
+    background-color: black;
+    transform-origin: left center;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+
+/* Connection directly from D. 959 to the concept */
+
+.flat-line-d959 {
+    position: absolute;
+    left: 470px;
+    top: 170px;
+    width: 335px;
+    height: 2px;
+    background-color: black;
+    transform-origin: left center;
+    transform: rotate(-25deg);
+    z-index: 1;
+}.second-main-line {
+    position: absolute;
+    left: 469px;
+    top: -110px;
+    width: 2px;
+    height: 450px;
+    background-color: black;
+    z-index: 1;
+.bubble:hover {
+    background-color: lightgray !important;
+}
