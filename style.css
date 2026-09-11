@@ -44,6 +44,11 @@ body {
     font-size: 18px;
 }
 
+.bubble.forthcoming {
+    color: #888;
+    border-color: #aaa;
+    background-color: #f7f7f7;
+}
 .connector.vertical {
     width: 2px;
     height: 60px;
